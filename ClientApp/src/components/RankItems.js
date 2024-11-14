@@ -41,7 +41,7 @@ const RankItems = ({items, setItems, dataType, imgArr, localStorageKey }) => {
     }, [dataType]);
 
     function getDataFromApi() {
-        fetch(`item/${1}`)
+        fetch(`item/${dataType}`)
             .then((results) => {
                 return results.json();
             })
